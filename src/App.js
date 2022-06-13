@@ -19,7 +19,9 @@ function App() {
       <Link to="/tiraPeliculas" exact={true}>TiraPeliculas</Link>
       <Link to="/contenedorPublicidad" exact={true}>ContenedorPublicidad</Link>
       <Link to="/" exact={true}>Home</Link>
-      <Link to="/usuarios" exact={true}>Usuarios</Link>
+      <Link to="/usuarios/0" exact={true}>Usuarios0</Link>
+      <Link to="/usuarios/1" exact={true}>Usuarios1</Link>
+  
 
       <Routes>
         <Route path="/contador"  element={<Contador/>}/>   
