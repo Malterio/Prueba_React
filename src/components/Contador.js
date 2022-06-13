@@ -20,6 +20,16 @@ class Contador extends Component{
             numero: this.state.numero - 1
         })
     }
+    componentDidMount() { 
+        console.log("Me monté");
+    }
+    componentDidUpdate() { 
+        console.log("Me actualicé");
+    }
+    componentWillUnmount() { 
+    console.log("Me actualicé");
+    }
+
     render(){
         return (
             <div >
