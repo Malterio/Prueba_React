@@ -7,6 +7,7 @@ import Contador from './components/Contador';
 import Gif from './components/Gif';
 import Home from './components/Home'
 import Usuarios from './components/Usuarios'
+//import AgregarFrutas from './components/AgregarFrutas'
 import Error404 from './components/Error404'
 import {Link, Route, Routes} from "react-router-dom"
 
@@ -21,6 +22,7 @@ function App() {
       <Link to="/" exact={true}>Home</Link>
       <Link to="/usuarios/0" exact={true}>Usuarios0</Link>
       <Link to="/usuarios/1" exact={true}>Usuarios1</Link>
+      <Link to="/agregarFrutas" exact={true}>AgregarFrutas</Link>
   
 
       <Routes>
@@ -33,6 +35,7 @@ function App() {
         <Route path="/contenedorPublicidad"  element={<ContenedorPublicidad/>}/> 
         <Route path="/"  element={<Home/>}/> 
         <Route path="/usuarios/:id"  element={<Usuarios/>}/>
+        {/* <Route path="/agregarFrutas" element={<AgregarFrutas/>}/> */}
         <Route path="*" element={<Error404/>}/>
       </Routes>       
       </header>

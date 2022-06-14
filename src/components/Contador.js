@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-
-
 class Contador extends Component{
-
-    constructor (props){
+    constructor (props) {
         super(props);       // le pasa a este componente toda la lógica que trae el paquete component
         this.state = {           //recibe todas las propiedades y valores
             numero: props.inicial
         }
     }
+
     incrementar (){
         this.setState({
             numero: this.state.numero + 1
@@ -42,3 +40,4 @@ class Contador extends Component{
 }
 
 export default Contador;
+
